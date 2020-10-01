@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
- *
- * @author 
+ * Determines the animal
+ * @author Rose
  */
 public class Main {
 
@@ -9,7 +10,30 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // create scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    //Ask the user if animal has feathers
+    System.out.println("Does the animal have feathers? (yes/no)");
+    String feathers = input.nextLine();
+
+    if (feathers.equals("yes")){
+      System.out.println("Does the animal swim? (yes/no)");
+      String swim = input.nextLine();
+      if (swim.equals("yes")){
+        System.out.println("This is a duck");
+      }else {
+        System.out.println("This is a hen");
+      }
+    }else {
+      System.out.println("Does the animal have legs? (yes/no)");
+      String legs = input.nextLine();
+      if (legs.equals("yes")){
+        System.out.println("This is a lizard");
+      }else {
+        System.out.println("This is a snake");
+      }
+    }
     
   }
 }
