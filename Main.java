@@ -16,7 +16,8 @@ public class Main {
     //Ask the user if animal has feathers
     System.out.println("Does the animal have feathers? (yes/no)");
     String feathers = input.nextLine();
-
+    
+    //ask user if animal swims
     if (feathers.equals("yes")){
       System.out.println("Does the animal swim? (yes/no)");
       String swim = input.nextLine();
@@ -26,6 +27,7 @@ public class Main {
         System.out.println("This is a hen");
       }
     }else {
+      //ask user if animal has legs
       System.out.println("Does the animal have legs? (yes/no)");
       String legs = input.nextLine();
       if (legs.equals("yes")){
